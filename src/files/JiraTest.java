@@ -18,6 +18,8 @@ public class JiraTest {
 		System.out.println("Git Test1");
 		System.out.println("Git Test2");
 		
+		System.out.println("Git Demo Branch");
+		
 		SessionFilter session = new SessionFilter();//We can use session filters to take session variables for next methods.
 		given().header("Content-Type","application/json").body("{ \"username\": \"lavalesh.gupta\", \"password\": \"Jira&&12345\" }")
 		.log().all().filter(session).when().post("/rest/auth/1/session").then().log().all().extract().response().asString();
