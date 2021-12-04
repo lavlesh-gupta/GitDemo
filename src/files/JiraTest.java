@@ -15,6 +15,8 @@ public class JiraTest {
 	{
 		// TODO Auto-generated method stub
 		RestAssured.baseURI = "http://localhost:8080";
+		System.out.println("Git Test1");
+		System.out.println("Git Test2");
 		
 		SessionFilter session = new SessionFilter();//We can use session filters to take session variables for next methods.
 		given().header("Content-Type","application/json").body("{ \"username\": \"lavalesh.gupta\", \"password\": \"Jira&&12345\" }")
